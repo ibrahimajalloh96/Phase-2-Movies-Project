@@ -53,6 +53,9 @@ function onUpdateRelease(updatedMovie)
     setMovies(updatedMovies)
 }
 
+      const onAddMovie=(newMovie)=>{
+        console.log (newMovie)
+      }
 
     return (
     <main>
@@ -64,7 +67,7 @@ function onUpdateRelease(updatedMovie)
           />
           <Route
             path="/new-movie-form"
-            element={<NewMovieForm />}
+            element={<NewMovieForm onAddMovie={onAddMovie} />}
           />
           <Route
             path="/movies"
