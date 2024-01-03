@@ -28,3 +28,6 @@ const handleSubmit = (e)=> {
     },
     body: JSON.stringify(formData)
   })
+  .then((resp)=>resp.json())
+  .then((newMovie)=>{ })
+  
