@@ -16,6 +16,15 @@ const handleChange = (e)=> {
     [name]: value
   })
   )
-  
-  
+};
+console.log (form)
+const handleSubmit = (e)=> {
+  e.preventDefaault();
 }
+  fetch(url,{
+    method: "POST",
+    headers: { 
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData)
+  })
